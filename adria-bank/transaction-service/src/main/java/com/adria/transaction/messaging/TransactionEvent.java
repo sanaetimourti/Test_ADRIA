@@ -1,0 +1,1 @@
+package com.adria.transaction.messaging;import java.util.*;import java.math.*;import java.time.*;public record TransactionEvent(UUID eventId,String eventType,UUID transactionId,UUID accountId,BigDecimal amount,String currency,Instant occurredAt){}

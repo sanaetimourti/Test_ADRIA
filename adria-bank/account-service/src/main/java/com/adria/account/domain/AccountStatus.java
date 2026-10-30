@@ -1,0 +1,1 @@
+package com.adria.account.domain; public enum AccountStatus { ACTIVE, BLOCKED }

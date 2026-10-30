@@ -1,0 +1,1 @@
+package com.adria.transaction.repository;import com.adria.transaction.domain.BankTransaction;import org.springframework.data.jpa.repository.JpaRepository;import java.util.*;public interface TransactionRepository extends JpaRepository<BankTransaction,UUID>{List<BankTransaction> findByAccountId(UUID accountId);}

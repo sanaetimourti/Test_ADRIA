@@ -1,0 +1,2 @@
+package com.adria.account.web.graphql;import com.adria.account.domain.Account;import com.adria.account.service.AccountService;import org.springframework.graphql.data.method.annotation.*;import org.springframework.stereotype.Controller;import java.util.*;
+@Controller public class AccountGraphQLController {private final AccountService service;public AccountGraphQLController(AccountService s){service=s;}@QueryMapping public List<Account> accounts(){return service.all();}@QueryMapping public Account accountById(@Argument UUID id){return service.get(id);}}
